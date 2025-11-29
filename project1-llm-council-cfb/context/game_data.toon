@@ -1,0 +1,227 @@
+GAME_DATA:
+  season: 2025
+
+  matchup:
+    game_id: "2025-11-28-texas-texasam"
+    description: "Texas Longhorns vs Texas A&M Aggies"
+    location: "Darrell K Royal–Texas Memorial Stadium, Austin, TX"
+    stadium: "Darrell K Royal–Texas Memorial Stadium"
+    kickoff_time_local: "2025-11-28 18:30"
+    kickoff_time_tz: "America/Chicago"
+    is_neutral_site: false
+
+    betting_odds:
+      favorite_team_abbrev: "TAMU"
+      spread_points: -2.5                
+      over_under_total: 52
+      moneyline:
+        TEX: -124
+        TAMU: +122
+
+  context:
+    weather_forecast: "Mild, no major wind expected"
+    home_field_edge: "high"
+    home_field_notes: "Texas at home at DKR with strong crowd-noise advantage."
+    rivalry: "Lone Star Showdown"
+    rivalry_volatility:
+      description: "Historically high-variance rivalry with long eras of dominance by each side and a near-even modern record."
+      modern_record_since_1980:
+        texas_wins: 17
+        tamu_wins: 16
+      known_facts:
+        - "Texas leads the all-time series 77–37–5."
+        - "Texas held a 10-game win streak from 1957–1966."
+        - "Since 1980, the series is nearly even (Texas 17–16 vs Texas A&M)."
+    external_predictors:
+      espn_matchup_predictor:
+        texas_win_prob: 0.52        
+        tamu_win_prob: 0.48
+        source: "ESPN Analytics"
+        as_of: "2025-11-27"
+    notes:
+      - "Use only the structured data here plus generic football knowledge."
+      - "Do not assume any additional 2025 stats, games, or injuries beyond what is encoded."
+
+  teams:
+    TEX:
+      meta:
+        id: 1
+        name: "Texas Longhorns"
+        abbrev: "TEX"
+        is_home: true
+        conference: "SEC"
+        overall_record: "8-3"
+        conference_record: "5-2"
+        ap_rank_current: 16
+        head_coach: "Steve Sarkisian"
+
+      stats:
+        points_scored_pg: 29.8
+        points_allowed_pg: 20.0
+        total_yards_pg: 381.6
+        total_yards_allowed_pg: 335.9
+        yards_per_play_off: 5.7
+        yards_per_play_def: 4.7
+        points_per_play_off: 0.447
+        points_per_play_def: 0.281
+        third_down_conversion_off: 0.4079
+        third_down_conversion_def: 0.3457
+        red_zone_scoring_off: 0.8372
+        red_zone_scoring_def: 0.8519
+        rush_yards_pg: 121.7
+        rush_yards_allowed_pg: 92.7
+        pass_yards_pg: 259.9
+        pass_yards_allowed_pg: 243.2
+        rush_yards_per_carry_off: 3.7
+        rush_yards_per_carry_def: 2.8
+        turnover_margin_pg: null
+
+      key_players:
+        offense:
+          qb1:
+            name: "Arch Manning"
+            position: "QB"
+            passing_yards: 2763
+            notes: "Primary QB and offensive centerpiece."
+          rb1:
+            name: "Quintrevion Wisner"
+            position: "RB"
+            rushing_yards: 442
+          wr1:
+            name: "Ryan Wingo"
+            position: "WR"
+            receiving_yards: 736
+
+        defense:
+          tackle_leader:
+            name: "Anthony Hill Jr."
+            position: "LB"
+            total_tackles: 70
+          interception_leader:
+            name: "Jelani McDonald"
+            position: "DB"
+            interceptions: 3
+
+      defensive_playmakers:
+        - name: "Anthony Hill Jr."
+          position: "LB"
+          impact: "high"
+          status: "questionable"
+        - name: "Jelani McDonald"
+          position: "DB"
+          impact: "medium-high"
+          status: "healthy"
+        - name: "Ethan Burke"
+          position: "DE"
+          impact: "medium"
+          status: "healthy"
+
+      depth_chart_simplified:
+        qb: ["Arch Manning"]
+        rb: ["Quintrevion Wisner", "C.J. Baxter"]
+        wr: ["Ryan Wingo", "Kaliq Lockett"]
+
+      injuries:
+        - player: "Anthony Hill Jr."
+          position: "LB"
+          status: "questionable"
+          impact: "high"
+        - player: "Ty'Anthony Smith"
+          position: "LB"
+          status: "out_first_half"
+          impact: "medium"
+
+    TAMU:
+      meta:
+        id: 2
+        name: "Texas A&M Aggies"
+        abbrev: "TAMU"
+        is_home: false
+        conference: "SEC"
+        overall_record: "11-0"
+        conference_record: "7-0"
+        ap_rank_current: 3
+        head_coach: "Mike Elko"
+
+      stats:
+        points_scored_pg: 37.1
+        points_allowed_pg: 23.6
+        total_yards_pg: 464.3
+        total_yards_allowed_pg: 325.5
+        yards_per_play_off: 6.7
+        yards_per_play_def: 4.9
+        points_per_play_off: 0.537
+        points_per_play_def: 0.357
+        third_down_conversion_off: 0.4094
+        third_down_conversion_def: 0.2403
+        red_zone_scoring_off: 0.8605
+        red_zone_scoring_def: 0.9655
+        rush_yards_pg: 191.0
+        rush_yards_allowed_pg: 128.7
+        pass_yards_pg: 269.2
+        pass_yards_allowed_pg: 196.8
+        rush_yards_per_carry_off: 5.0
+        rush_yards_per_carry_def: 4.1
+        turnover_margin_pg: null
+
+      key_players:
+        offense:
+          qb1:
+            name: "Marcel Reed"
+            position: "QB"
+            passing_yards: 2752
+          rb1:
+            name: "Rueben Owens II"
+            position: "RB"
+            rushing_yards: 570
+          wr1:
+            name: "KC Concepcion"
+            position: "WR"
+            receiving_yards: 829
+
+        defense:
+          tackle_leader:
+            name: "Taurean York"
+            position: "LB"
+            total_tackles: 56
+          interception_leader:
+            name: "Dalton Brooks"
+            position: "S"
+            interceptions: 1
+
+      defensive_playmakers:
+        - name: "Taurean York"
+          position: "LB"
+          impact: "high"
+          status: "healthy"
+        - name: "Dalton Brooks"
+          position: "S"
+          impact: "medium-high"
+          status: "healthy"
+        - name: "Dayon Hayes"
+          position: "DE"
+          impact: "medium"
+          status: "healthy"
+
+      depth_chart_simplified:
+        qb: ["Marcel Reed", "Miles O'Neill", "Brady Hart", "Jacob Zeno"]
+        rb: ["Le'Veon Moss", "Rueben Owens II"]
+        wr: ["KC Concepcion", "Ashton Bethel-Roman", "Mario Craver"]
+
+      injuries:
+        - player: "Le'Veon Moss"
+          position: "RB"
+          status: "doubtful"
+          impact: "high"
+        - player: "Scooby Williams"
+          position: "LB"
+          status: "doubtful"
+          impact: "medium"
+        - player: "Bryce Anderson"
+          position: "S"
+          status: "out"
+          impact: "high"
+        - player: "Rashad Johnson Jr."
+          position: "S"
+          status: "out"
+          impact: "medium-high"
